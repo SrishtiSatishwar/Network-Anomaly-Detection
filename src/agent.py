@@ -89,7 +89,7 @@ class RootCauseAnalysisAgent:
     
     def analyze_anomaly(self, anomaly: Dict[str, Any], historical_context: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Analyze an anomaly using OpenAI's API to determine the root cause.
+        Analyze an anomaly using Gemini's API to determine the root cause.
         
         Args:
             anomaly: Dictionary containing anomaly details
@@ -98,7 +98,7 @@ class RootCauseAnalysisAgent:
         Returns:
             Dictionary containing the analysis results
         """
-        # Construct prompt for OpenAI
+        # Construct prompt for Gemini
         prompt = f"""As a network security expert, analyze this network anomaly and determine its root cause.
 
 Anomaly Details:
